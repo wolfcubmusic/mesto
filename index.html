@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F3F0E9">
+  <meta name="description" content="МЕСТО — концептуальная коллекция модульной мебели. Одна комната для работы, встреч и отдыха.">
+  <title>МЕСТО — квартира та же. Жизнь разная</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/rubik-800.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css?v=20261011-2">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="МЕСТО — начало страницы">МЕСТО</a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#scenarios">Сценарии</a><a href="#collection">Модули</a><a href="#materials">Материалы</a>
+      </nav>
+      <a class="button small header-cta" href="#selection">Подобрать комплект <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false"><span>Меню</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav container" aria-label="Мобильная навигация" hidden><a href="#scenarios">Сценарии</a><a href="#collection">Модули</a><a href="#materials">Материалы</a><a href="#selection">Подобрать комплект ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Модульная мебель для жизни</p>
+        <h1 id="hero-title"><span>Квартира</span><span>та же.</span><span class="blue">Жизнь разная</span></h1>
+        <p class="lead">Место для идей, для своих, для себя.<br>Одна коллекция — разные способы жить дома.</p>
+        <div class="hero-actions"><a class="button" href="#collection">Выбрать модули <span aria-hidden="true">↗</span></a><a class="text-link" href="#scenarios">Посмотреть сценарии <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <figure class="hero-figure">
+        <div class="figure-label"><span>Дома можно по-разному</span><span>01—03</span></div>
+        <img src="assets/room-rest.webp" width="1536" height="1024" alt="Светлая комната: шалфейный диван с приставленным пуфом, дубовый стол и тумба" fetchpriority="high">
+        <figcaption><span>Сегодня — домой выдыхать</span><span class="round-arrow" aria-hidden="true">↘</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="scenarios section-blue" id="scenarios" aria-labelledby="scenarios-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">01 / Сценарии</p><div><h2 id="scenarios-title">Одна комната.<br>Три сценария</h2><p>Не каждый день похож на предыдущий.<br>Попробуйте другую расстановку.</p></div></div>
+        <div class="scenario-tabs" role="tablist" aria-label="Сценарий жизни дома">
+          <button id="tab-work" role="tab" aria-selected="true" aria-controls="scenario-panel" data-scene="work" tabindex="0"><span>01</span> Работа</button>
+          <button id="tab-guests" role="tab" aria-selected="false" aria-controls="scenario-panel" data-scene="guests" tabindex="-1"><span>02</span> Гости</button>
+          <button id="tab-rest" role="tab" aria-selected="false" aria-controls="scenario-panel" data-scene="rest" tabindex="-1"><span>03</span> Отдых</button>
+        </div>
+        <div id="scenario-panel" role="tabpanel" aria-labelledby="tab-work" tabindex="0">
+          <div class="scene-stage">
+            <img class="scene-image is-active" data-image="work" src="assets/room-work.webp" width="1536" height="1024" alt="Работа: стул у стола с ноутбуком, пуф слева перед диваном" loading="lazy">
+            <img class="scene-image" data-image="guests" src="assets/room-guests.webp" width="1536" height="1024" alt="Гости: пуф — отдельное сиденье, стул развёрнут к дивану" loading="lazy" aria-hidden="true">
+            <img class="scene-image" data-image="rest" src="assets/room-rest.webp" width="1536" height="1024" alt="Отдых: пуф приставлен к правому сиденью дивана, рядом книга и плед" loading="lazy" aria-hidden="true">
+          </div>
+          <div class="scene-caption" aria-live="polite" aria-atomic="true"><h3 id="scene-title">Место для идей</h3><p id="scene-description">Стул — у стола, ноутбук — под рукой. Пуф остаётся отдельным местом рядом с диваном.</p><span class="scene-count" id="scene-count">01 / 03</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="system container section-space" id="system" aria-labelledby="system-title">
+      <div class="system-copy"><p class="eyebrow">02 / Как устроено МЕСТО</p><h2 id="system-title">Меняется расстановка —<br>меняется день</h2><p class="lead">Две секции составляют диван. Пуф может быть отдельным сиденьем или продолжением места для отдыха.</p><p>Стол и хранение остаются на своих местах. Для нового сценария достаточно переставить пуф и развернуть стул.</p><div class="system-note"><span class="note-mark" aria-hidden="true">↔</span><p>У дивана и пуфа одна высота посадки — <strong>42 см</strong></p></div></div>
+      <div class="plan-card">
+        <div class="plan-top"><span>Вид сверху</span><span id="plan-label">Работа</span></div>
+        <svg id="room-plan" viewBox="0 0 480 360" role="img" aria-labelledby="plan-svg-title plan-svg-desc">
+          <title id="plan-svg-title">Схема расстановки — работа</title><desc id="plan-svg-desc">Диван и тумба у задней стены, стол справа, пуф слева перед диваном, стул у стола. Схема условная.</desc>
+          <rect x="8" y="8" width="464" height="344" fill="#F3F0E9" stroke="#D8CDBE" stroke-width="3"/>
+          <path d="M8 42V148" stroke="#3452D1" stroke-width="5"/><path d="M15 42V148" stroke="#3452D1" stroke-width="1"/>
+          <g fill="#B3BEAA" stroke="#252823" stroke-width="1.5"><rect x="40" y="40" width="100" height="95" rx="7"/><rect x="140" y="40" width="100" height="95" rx="7"/></g>
+          <g fill="#95A18D"><rect x="44" y="44" width="92" height="22" rx="5"/><rect x="144" y="44" width="92" height="22" rx="5"/><rect x="44" y="66" width="12" height="64" rx="4"/><rect x="224" y="66" width="12" height="64" rx="4"/></g>
+          <g fill="#D8CDBE" stroke="#252823" stroke-width="1.5"><rect x="280" y="35" width="160" height="40" rx="2"/><path d="M333 35V75M386 35V75"/><rect x="300" y="220" width="140" height="65" rx="2"/></g>
+          <g id="plan-ottoman" transform="translate(50 180)"><rect width="88" height="70" rx="7" fill="#B3BEAA" stroke="#3452D1" stroke-width="2.5"/><text x="44" y="40" text-anchor="middle" class="plan-text">Пуф</text></g>
+          <g id="plan-chair" transform="translate(338 290)"><rect width="38" height="35" rx="5" fill="#252823"/><path d="M3 31H35" stroke="#F3F0E9" stroke-width="3"/></g>
+          <text x="140" y="106" text-anchor="middle" class="plan-text">Диван</text><text x="360" y="60" text-anchor="middle" class="plan-text">Хранение</text><text x="370" y="256" text-anchor="middle" class="plan-text">Стол</text>
+        </svg>
+        <div class="plan-controls" aria-label="Изменить схему расстановки"><button type="button" data-plan-scene="work" aria-pressed="true">Работа</button><button type="button" data-plan-scene="guests" aria-pressed="false">Гости</button><button type="button" data-plan-scene="rest" aria-pressed="false">Отдых</button></div>
+        <p class="plan-footnote">Схема показывает положение предметов</p>
+      </div>
+    </section>
+
+    <section class="collection section-space" id="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">03 / Коллекция</p><div><h2 id="collection-title">Начните с нужного</h2><p>Четыре предмета. Общие материалы и формы.<br>Выберите то, что нужно вашей комнате.</p></div></div>
+        <div class="product-grid">
+          <article class="product"><div class="product-image"><span class="product-number">01</span><img src="assets/section.webp" width="1254" height="1254" alt="Левая диванная секция с одним подлокотником и открытой стороной стыка" loading="lazy"></div><h3>Диванная секция</h3><p class="product-size">100 × 95 × 80 см</p><p>Основа дивана — по одной секции на каждое место.</p><button class="detail-link" type="button" data-product="section">Подробнее <span aria-hidden="true">↗</span></button></article>
+          <article class="product"><div class="product-image"><span class="product-number">02</span><img src="assets/ottoman.webp" width="1254" height="1254" alt="Прямоугольный шалфейный пуф на низком дубовом основании" loading="lazy"></div><h3>Пуф</h3><p class="product-size">88 × 70 × 42 см</p><p>Для гостя рядом или для ног после долгого дня.</p><button class="detail-link" type="button" data-product="ottoman">Подробнее <span aria-hidden="true">↗</span></button></article>
+          <article class="product"><div class="product-image"><span class="product-number">03</span><img src="assets/desk.webp" width="1254" height="1254" alt="Дубовый стол с двумя широкими боковыми панельными опорами" loading="lazy"></div><h3>Стол</h3><p class="product-size">140 × 65 × 75 см</p><p>Место для работы и небольших повседневных дел.</p><button class="detail-link" type="button" data-product="desk">Подробнее <span aria-hidden="true">↗</span></button></article>
+          <article class="product"><div class="product-image"><span class="product-number">04</span><img src="assets/storage.webp" width="1254" height="1254" alt="Низкая дубовая тумба с тремя закрытыми фасадами" loading="lazy"></div><h3>Хранение</h3><p class="product-size">160 × 40 × 75 см</p><p>Чтобы важное было рядом, а лишнее — внутри.</p><button class="detail-link" type="button" data-product="storage">Подробнее <span aria-hidden="true">↗</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="materials container section-space" id="materials" aria-labelledby="materials-title">
+      <div class="section-heading"><p class="eyebrow">04 / Материалы</p><div><h2 id="materials-title">Детали,<br>с которыми живёшь</h2><p>Фактура ткани, рисунок дуба, простые швы.<br>Рассмотрите коллекцию ближе.</p></div></div>
+      <div class="material-grid">
+        <figure><img src="assets/detail-fabric.webp" width="1536" height="1024" alt="Крупный план переплетения шалфейной ткани на подлокотнике" loading="lazy"><figcaption><span>01 / Обивка</span><h3>Шалфейная ткань</h3><p>Матовая обивка полотняного переплетения. Один оттенок для диванных секций и пуфа.</p></figcaption></figure>
+        <figure><img src="assets/detail-base.webp" width="1536" height="1024" alt="Шов обивки пуфа и переход к низкому дубовому основанию" loading="lazy"><figcaption><span>02 / Соединение материалов</span><h3>Ткань встречается с дубом</h3><p>Простой шов, мягкое скругление и низкое деревянное основание.</p></figcaption></figure>
+        <figure><img src="assets/detail-oak.webp" width="1536" height="1024" alt="Дубовый шпон и обработанная кромка угла столешницы" loading="lazy"><figcaption><span>03 / Дерево</span><h3>Светлый дуб</h3><p>Натуральный дубовый шпон и матовая отделка. Рисунок древесины остаётся видимым.</p></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="process container section-space" id="process" aria-labelledby="process-title">
+      <div class="section-heading"><p class="eyebrow">05 / Подбор</p><div><h2 id="process-title">Ваше МЕСТО —<br>в три шага</h2></div></div>
+      <ol class="steps"><li><span class="step-num">01</span><h3>Расскажите о комнате</h3><p>Что уже есть дома и для чего вам нужно больше места?</p></li><li><span class="step-num">02</span><h3>Выберите сценарии</h3><p>Работа, гости, отдых — один главный или все три вместе.</p></li><li><span class="step-num">03</span><h3>Соберите комплект</h3><p>Начните с нужных предметов и продумайте, как они будут стоять.</p></li></ol>
+    </section>
+
+    <section class="selection section-blue" id="selection" aria-labelledby="selection-title">
+      <div class="container selection-layout"><div><p class="eyebrow">06 / Ваша комната</p><h2 id="selection-title">Соберём место<br>для вашей жизни</h2><p class="lead">Начните с того,<br>как вы проводите время дома.</p><div class="selection-palette"><p class="eyebrow">Палитра МЕСТО</p><ul class="brand-palette" aria-label="Пять цветов коллекции МЕСТО"><li><span class="palette-swatch palette-milk" aria-hidden="true"></span><span class="palette-name">Молочный</span><span class="palette-hex">#F3F0E9</span><span class="palette-role">Фон</span></li><li><span class="palette-swatch palette-sand" aria-hidden="true"></span><span class="palette-name">Песочный</span><span class="palette-hex">#D8CDBE</span><span class="palette-role">Поверхности</span></li><li><span class="palette-swatch palette-graphite" aria-hidden="true"></span><span class="palette-name">Графит</span><span class="palette-hex">#252823</span><span class="palette-role">Текст</span></li><li><span class="palette-swatch palette-ultramarine" aria-hidden="true"></span><span class="palette-name">Ультрамарин</span><span class="palette-hex">#3452D1</span><span class="palette-role">Акцент</span></li><li><span class="palette-swatch palette-sage" aria-hidden="true"></span><span class="palette-name">Шалфей</span><span class="palette-hex">#B3BEAA</span><span class="palette-role">Обивка</span></li></ul></div></div>
+      <form id="selection-form">
+        <label for="visitor-name">Как вас зовут<input id="visitor-name" name="name" autocomplete="given-name" placeholder="Ваше имя" maxlength="80" required></label>
+        <label for="visitor-contact">Контакт <span class="optional">необязательно</span><input id="visitor-contact" name="contact" autocomplete="email" placeholder="Телефон или почта" maxlength="120"></label>
+        <fieldset><legend>Что сейчас важнее?</legend><div class="radio-choices"><label><input type="radio" name="priority" value="work" checked><span>Работа</span></label><label><input type="radio" name="priority" value="guests"><span>Гости</span></label><label><input type="radio" name="priority" value="rest"><span>Отдых</span></label></div></fieldset>
+        <label for="visitor-room">О вашей комнате <span class="optional">необязательно</span><textarea id="visitor-room" name="room" rows="2" maxlength="1000" placeholder="Например: гостиная, в которой я работаю"></textarea></label>
+        <button class="button button-milk" type="submit">Получить подборку <span aria-hidden="true">↗</span></button>
+        <p class="form-note">В этой демонстрации подборка появится на странице. Данные не отправляются; контакт оставлять необязательно.</p>
+        <div id="selection-result" class="selection-result" hidden aria-live="polite" tabindex="-1"><p class="eyebrow">Ваша подборка</p><h3 id="result-title"></h3><p id="result-description"></p><ul id="result-items"></ul><button type="button" id="download-selection" class="text-link">Сохранить подборку <span aria-hidden="true">↓</span></button></div>
+      </form></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="wordmark" href="#home">МЕСТО</a><p>Квартира та же.<br>Жизнь разная</p><nav aria-label="Навигация в подвале"><a href="#scenarios">Сценарии</a><a href="#collection">Модули</a><a href="#materials">Материалы</a><a href="#selection">Подбор</a></nav><a class="back-top" href="#home" aria-label="Вернуться к началу страницы">↑</a></div><div class="footer-bottom"><span>Концептуальный бренд модульной мебели</span><span>WOLFART Design · 2026</span></div></div></footer>
+  <dialog id="product-dialog" aria-labelledby="product-dialog-title"><button class="dialog-close" type="button" aria-label="Закрыть описание предмета">×</button><div class="dialog-grid"><img id="dialog-image" alt="" width="1254" height="1254"><div><p class="eyebrow">Коллекция МЕСТО</p><h2 id="product-dialog-title"></h2><p id="dialog-size" class="product-size"></p><p id="dialog-description"></p><dl id="dialog-spec"></dl><a class="button" id="dialog-select" href="#selection">Подобрать комплект <span aria-hidden="true">↗</span></a></div></div></dialog>
+</body>
+</html>

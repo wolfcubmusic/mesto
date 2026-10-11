@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "local_references_checked": 63,
+  "errors": [],
+  "alignment_review": "Shared subgrid rows in products/materials/steps/palette; first-baseline section labels and captions; one-column hero at 640–991px; shared mobile edges.",
+  "widths_reviewed_px": [
+    320,
+    375,
+    390,
+    639,
+    640,
+    768,
+    991,
+    992,
+    1024,
+    1200,
+    1440,
+    1920
+  ],
+  "verification_method": "CSS rules and container geometry inspection; HTML resources and CSS structure; JavaScript syntax.",
+  "browser_visual_and_interaction_QA": "Not performed: required browser skill unavailable.",
+  "published_site_updated": false
+}
